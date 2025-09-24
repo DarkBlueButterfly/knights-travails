@@ -22,10 +22,10 @@ function knightMoves(start, end) {
 
         for (let [dx, dy] of knightMovements) {
             const pointX = x + dx;
-            const pointy = y + dy;
+            const pointY = y + dy;
 
-            if (isValid(pointX, pointy)) {
-                queue.push([[pointX, pointy], [...path, [pointX, pointy]]]);
+            if (isValid(pointX, pointY)) {
+                queue.push([[pointX, pointY], [...path, [pointX, pointY]]]);
             }
         }
     }
